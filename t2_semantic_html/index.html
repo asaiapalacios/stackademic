@@ -12,22 +12,19 @@
     <header>
         <!-- header: typically contains the site logo, heading elements, & site navigation -->
         
-<!-- SHOULD THERE BE A WRAPPER BESIDES HEADER FOR THIS GROUP? -->
 <!-- MAKE IMAGE SRC ACCESSIBLE FOR ALL TO SEE (NOT LOCAL)  --> 
         <img alt="a professional smiling photo of Asaía" src="asaia.png" width="200" height="200">
         <h1>Asaía Palacios</h1>
-    </header>
-
-    <main>
-        <!-- main: contains all of the content that is unique to a single webpage -->
-    
-        <p>Hi! I'm a newbie, student-in-training in web development en route to mobile app guruness (currently crushing on JavaScript and React Native).</p>
+       
+        <p>Hi! I'm a newbie in web development - self taught - en route to mobile app guruness (currently crushing on JavaScript and React Native).</p>
         <p>I tinker with technology and geek out when code comes to life in a physical interactive way; you had me at hello! Find me at the intersection where curiosity and creativity meets tech. DIY robot making is my jam, too - Raspberry Pi and Python, anyone?</p>
         <p>Sí, hablo español.</p>
 
-        <hr>
+    </header>
 
-        <hgroup>
+    <hr>
+
+    <section> 
         <h3>Education</h3>
             <ul>
                 <li><a target="_blank" href="https://stackademic.com/">Stackademic</a> (opens in new tab)</li> 
@@ -36,8 +33,10 @@
         
         <hr>
 
-<!-- REVIEW PROPER HTML SEMANTICS -->
+<!-- REVIEW PROPER HTML SEMANTICS, tables, purpose of cellspacing + INCLUDE NAV TAG (is it properly in place?) -->
         <h3>Work Experience Highlights</h3>
+
+        <nav>
         <table cellspacing="10">
             <thead>
                 <tr>
@@ -56,10 +55,12 @@
                 </tr>
             </tbody>
         </table>
-        
+        </nav>
+
         <hr>
         
         <h3>Skills</h3>
+        <nav>
         <table cellspacing="10">
             <tr>
                 <td>Bash</td>
@@ -74,14 +75,13 @@
                 <td>✰✰ (2 of 5 stars)</td>
             </tr>
         </table>
+        </nav>
+    </section>
 
         <hr>
 
-        </hgroup>
-    </main>
-
     <footer>
-        <h4>Brought to you by: <a target="_blank" href="https://github.com/asaiapalacios">Asaía</a> (opens in new tab)</h4>
+        <p>HTML webpage brought to you by: Asaía. Link to <a href="https://github.com/asaiapalacios">GitHub profile</a>.</p>
     </footer>
 </body>
 </html>
