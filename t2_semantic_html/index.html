@@ -1,3 +1,7 @@
+<!-- 
+Purpose: create a basic HTML webpage with semantic elements, accessibility in mind 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,17 +13,13 @@
 </head>
 
 <body>
-    <header>
-        <!-- header: typically contains the site logo, heading elements, & site navigation -->
-        
-<!-- MAKE IMAGE SRC ACCESSIBLE FOR ALL TO SEE (NOT LOCAL)  --> 
-        <img alt="a professional smiling photo of Asaía" src="asaia.png" width="200" height="200">
+    <header> <!-- header: typically contains the site logo, heading elements, and site navigation -->
+        <img alt="a professional smiling photo of Asaía" src="https://i.postimg.cc/NfkStmrk/asaia.png" width="200" height="200">
         <h1>Asaía Palacios</h1>
        
         <p>Hi! I'm a newbie in web development - self taught - en route to mobile app guruness (currently crushing on JavaScript and React Native).</p>
         <p>I tinker with technology and geek out when code comes to life in a physical interactive way; you had me at hello! Find me at the intersection where curiosity and creativity meets tech. DIY robot making is my jam, too - Raspberry Pi and Python, anyone?</p>
-        <p>Sí, hablo español.</p>
-
+        <p lang="es" translate="yes">Sí, hablo español.</p>
     </header>
 
     <hr>
@@ -27,41 +27,44 @@
     <section> 
         <h3>Education</h3>
             <ul>
-                <li><a target="_blank" href="https://stackademic.com/">Stackademic</a> (opens in new tab)</li> 
-                <li>The University of Texas at Austin</li>
+            <li><a target="_blank" href="https://stackademic.com/">Stackademic</a> (opens in new tab)</li> 
+            <li>The University of Texas at Austin</li>
             </ul>
         
         <hr>
 
-<!-- REVIEW PROPER HTML SEMANTICS, tables, purpose of cellspacing + INCLUDE NAV TAG (is it properly in place?) -->
         <h3>Work Experience Highlights</h3>
-
-        <nav>
-        <table cellspacing="10">
+        <table>
             <thead>
-                <tr>
-                    <th>Dates</th>
-                    <th>Work</th>
-                </tr>
+            <tr>
+                <th>Dates</th>
+                <th>Work</th>
+            </tr>
             </thead>
+            
             <tbody>
-                <tr>
-                    <td>2018</td>
-                    <td>AI Research Fellow at Kapor Center in Oakland</td>
-                </tr>
-                <tr>
-                    <td>2009</td>
-                    <td>Spanish Instructor at Jeden jacyk nastaci in Prague</td>
-                </tr>
+            <tr>
+                <td>2018</td>
+                <td>AI Research Fellow at Kapor Center in Oakland</td>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td>Spanish Instructor at Jeden jacyk nastaci in Prague</td>
+            </tr>
             </tbody>
         </table>
-        </nav>
 
         <hr>
         
         <h3>Skills</h3>
-        <nav>
-        <table cellspacing="10">
+        <table>
+            <thead>
+            <tr>
+                <th>5 star scale: ✰✰✰✰✰</th>
+            </tr>
+            </thead>
+
+            <tbody>
             <tr>
                 <td>Bash</td>
                 <td>✰✰✰ (3 of 5 stars)</td>
@@ -71,11 +74,15 @@
                 <td>✰✰✰ (3 of 5 stars)</td>
             </tr>
             <tr>
-                <td>Git + GitHub</td>
+                <td>Git</td>
                 <td>✰✰ (2 of 5 stars)</td>
             </tr>
+            <tr>
+                <td>GitHub</td>
+                <td>✰✰ (2 of 5 stars)</td>
+            </tr>
+            </tbody>
         </table>
-        </nav>
     </section>
 
         <hr>
